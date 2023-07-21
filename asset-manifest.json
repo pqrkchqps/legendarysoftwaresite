@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/legendarysoftwaresite/static/css/main.3a3b7eca.css",
-    "main.js": "/legendarysoftwaresite/static/js/main.2767134b.js",
-    "static/js/787.e2e8d70f.chunk.js": "/legendarysoftwaresite/static/js/787.e2e8d70f.chunk.js",
-    "index.html": "/legendarysoftwaresite/index.html",
-    "main.3a3b7eca.css.map": "/legendarysoftwaresite/static/css/main.3a3b7eca.css.map",
-    "main.2767134b.js.map": "/legendarysoftwaresite/static/js/main.2767134b.js.map",
-    "787.e2e8d70f.chunk.js.map": "/legendarysoftwaresite/static/js/787.e2e8d70f.chunk.js.map"
+    "main.css": "/static/css/main.3a3b7eca.css",
+    "main.js": "/static/js/main.27ed8013.js",
+    "static/js/787.e2e8d70f.chunk.js": "/static/js/787.e2e8d70f.chunk.js",
+    "index.html": "/index.html",
+    "main.3a3b7eca.css.map": "/static/css/main.3a3b7eca.css.map",
+    "main.27ed8013.js.map": "/static/js/main.27ed8013.js.map",
+    "787.e2e8d70f.chunk.js.map": "/static/js/787.e2e8d70f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3b7eca.css",
-    "static/js/main.2767134b.js"
+    "static/js/main.27ed8013.js"
   ]
 }
