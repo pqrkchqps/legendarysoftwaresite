@@ -17,13 +17,14 @@
   --lightest: hsl(69, 69%, 90%);
   --lighter: hsl(38, 72%, 17%);
   --light: hsl(44, 49%, 16%);
-  --normal: hsl(51, 64%, 4%);
+  --normal: hsl(51, 64%, 6%);
   --dark: hsl(93, 48%, 9%);
   --darker: hsl(35, 63%, 5%);
   --darkest: hsl(80, 53%, 3%);
   --complement: hsl(100, 77%, 10%);
   --complement-light: hsl(76, 74%, 42%);
 }
+html,
 body {
   margin: 0;
   font-family: Frik, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -83,7 +84,7 @@ header {
   padding: 0px;
   height: 100px;
   color: var(--lightest);
-  border: 2px solid var(--lightest);
+  border-bottom: 1px solid var(--lightest);
 }
 
 nav ul {
@@ -102,11 +103,12 @@ nav li {
   width: calc(76px - 2rem);
   margin: 1rem;
   height: calc(76px - 2rem);
-  border: 2px solid var(--lightest);
   border-radius: 100%;
   font-size: 2rem;
   text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 nav li:hover {
@@ -117,12 +119,12 @@ nav li:before {
   content: "";
   position: absolute;
   inset: -8px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   background: conic-gradient(
     var(--complement-light),
     #0000 30deg 120deg,
-    var(--lighter) 150deg 180deg,
+    var(--lightest) 150deg 180deg,
     #0000 210deg 300deg,
     var(--complement-light) 330deg
   );
@@ -133,7 +135,7 @@ nav li:before {
 nav li:after {
   content: "";
   position: absolute;
-  inset: -100px;
+  inset: -10px;
   background: radial-gradient(
       200px at left 400px top 150px,
       var(--complement-light) 100%,
@@ -141,7 +143,7 @@ nav li:after {
     ),
     radial-gradient(
       200px at right 400px bottom 150px,
-      var(--lighter) 100%,
+      var(--lightest) 100%,
       #0000
     );
   filter: blur(120px);
@@ -186,7 +188,7 @@ nav li p {
 }
 
 .hero {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 101px);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -240,6 +242,12 @@ nav li p {
 }
 .hero-text .quote p {
   font-family: Frik;
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    background-position: 1200px 0px;
+  }
 }
 
 .indent-text {
