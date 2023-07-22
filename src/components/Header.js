@@ -6,15 +6,26 @@ function Header() {
     <header>
       <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          <Link to="/">
+            <li>
+              <p>Home</p>
+            </li>
+          </Link>
+          <Link to="/services">
+            <li>
+              <p>Services</p>
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li>
+              <p>Contact</p>
+            </li>
+          </Link>
+          <Link to="/about">
+            <li>
+              <p>About</p>
+            </li>
+          </Link>
         </ul>
       </nav>
     </header>
