@@ -63,6 +63,10 @@ li {
   padding: 0px;
 }
 
+html {
+  font-size: 16px;
+}
+
 .app {
   width: 100%;
   margin: 0 auto;
@@ -344,6 +348,11 @@ nav li p {
   font-family: Frik;
 }
 
+.indent-text {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 @media screen and (max-width: 960px) {
   .hero {
     background-position: 1200px 0px;
@@ -391,12 +400,21 @@ nav li p {
     margin: 5px;
   }
   .hero-text h1 {
+    margin-left: 20px;
   }
 }
 
-.indent-text {
-  margin-left: 4rem;
-  margin-right: 4rem;
+@media screen and (max-width: 490px) {
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+  .hero-text .quote {
+    font-size: 1.2rem;
+  }
+  .indent-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 /* Services page styles */
