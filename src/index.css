@@ -87,6 +87,10 @@ header {
   border-bottom: 1px solid var(--lightest);
 }
 
+nav .icon {
+  display: none;
+}
+
 nav ul {
   position: relative;
   animation-name: header-move;
@@ -177,6 +181,102 @@ nav li p {
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+  @keyframes header-open {
+    from {
+      height: 80px;
+    }
+
+    to {
+      height: 400px;
+    }
+  }
+
+  @keyframes header-close {
+    from {
+      height: 400px;
+    }
+
+    to {
+      height: 100px;
+    }
+  }
+
+  @keyframes links-open {
+    from {
+      top: -320px;
+    }
+
+    to {
+      top: 0px;
+    }
+  }
+
+  @keyframes links-close {
+    from {
+      top: 0px;
+      opacity: 1;
+    }
+
+    to {
+      top: -320px;
+      opacity: 0;
+    }
+  }
+
+  header.responsive {
+    animation-name: header-open;
+    animation-duration: 1s;
+    height: 400px;
+  }
+  header.opened:not(.responsive) {
+    animation-name: header-close;
+    animation-duration: 1s;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+  }
+  nav .icon {
+    float: right;
+    display: block;
+  }
+  nav a {
+    display: none;
+  }
+  nav ul.responsive {
+    animation-name: links-open;
+    animation-duration: 1s;
+    width: 100%;
+    height: 100%;
+    display: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav ul.opened:not(.responsive) {
+    animation-name: links-close;
+    animation-duration: 1s;
+  }
+
+  nav ul.responsive a {
+    display: block;
+  }
+
+  nav ul.closing {
+    width: 100%;
+    height: 100%;
+    display: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  nav ul.closing a {
+    display: block;
+  }
+}
+
 /* Home page styles */
 @keyframes hero-zoom-in {
   0% {
@@ -247,6 +347,50 @@ nav li p {
 @media screen and (max-width: 960px) {
   .hero {
     background-position: 1200px 0px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .hero {
+    padding-top: 80px;
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    width: 600px;
+  }
+
+  .hero-text h1 {
+    font-size: 10rem;
+  }
+  .hero-text .quote {
+    font-size: 2rem;
+    width: calc(100%-1rem);
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .hero-text {
+    width: 500px;
+  }
+  .hero-text h1 {
+    font-size: 8.5rem;
+  }
+  .hero-text .quote {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .hero {
+    margin: 0px;
+    justify-content: center;
+  }
+  .hero-text {
+    width: 100%;
+    margin: 5px;
+  }
+  .hero-text h1 {
   }
 }
 

@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 function Header() {
+  const [useHam, setUseHam] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const handleClick = (e) => {
+    setUseHam(!useHam);
+    setHasOpened(true);
+    setIsClosing(true);
+    setTimeout(function () {
+      setIsClosing(false);
+    }, 1000);
+  };
+
   return (
-    <header>
+    <header
+      className={(useHam ? "responsive " : "") + (hasOpened ? "opened" : "")}
+    >
       <nav>
-        <ul>
+        <ul
+          className={
+            (useHam ? "responsive " : "") +
+            (hasOpened ? "opened " : "") +
+            (isClosing ? "closing" : "")
+          }
+        >
           <Link to="/">
             <li>
               <p>Home</p>
@@ -27,6 +47,7 @@ function Header() {
             </li>
           </Link>
         </ul>
+        <FaBars className="icon" onClick={handleClick} />
       </nav>
     </header>
   );
