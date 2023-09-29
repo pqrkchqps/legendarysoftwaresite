@@ -1,10 +1,8 @@
 import React from "react";
 import image from "../images/spacex.jpg";
 import online from "../images/online-presence.jpg";
-import { FaRegLightbulb } from "react-icons/fa";
-import CircleBorder from "./CircleBorder";
 
-function Home() {
+function Home2() {
   return (
     <div className="home">
       <section className="hero" style={{ backgroundImage: `url(${image})` }}>
@@ -25,25 +23,19 @@ function Home() {
           to providing you with the tools and solutions you need to thrive.
         </p>
       </section>
-      <section className="vc_row element-row row vc_custom_1427887179004 highend_vc_custom_1427887179004">
-        <div className="wpb_column vc_column_container vc_col-sm-12 hb-animate-element hb-bottom-to-top hb-in-viewport">
-          <div className="vc_column-inner">
-            <div className="wpb_wrapper">
-              <div className="wpb_text_column wpb_content_element ">
-                <div className="wpb_wrapper">
-                  <div className="hb-process-steps clearfix steps-4 ">
-                    <ul className="hb-process">
+      <section class="vc_row element-row row vc_custom_1427887179004 highend_vc_custom_1427887179004">
+        <div class="wpb_column vc_column_container vc_col-sm-12 hb-animate-element hb-bottom-to-top hb-in-viewport">
+          <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+              <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                  <div class="hb-process-steps clearfix steps-4 ">
+                    <ul class="hb-process">
                       <li>
-                        <div className="feature-box aligncenter">
-                          <CircleBorder
-                            size="110px"
-                            borderWidth="1px"
-                            borderColor="black"
-                          >
-                            <FaRegLightbulb className="icon-lightbulb ic-holder-1" />
-                          </CircleBorder>
-                          <h4 className="bold">Idea</h4>
-                          <div className="hb-small-break"></div>
+                        <div class="feature-box aligncenter">
+                          <i class="icon-lightbulb ic-holder-1"></i>
+                          <h4 class="bold">Idea</h4>
+                          <div class="hb-small-break"></div>
                           <p>
                             Sed bibendum quam sem, sit amet interdum justo
                             fringilla id. Praesent adipiscing ac tortor.
@@ -52,10 +44,10 @@ function Home() {
                       </li>
 
                       <li>
-                        <div className="feature-box aligncenter">
-                          <i className="icon-star-half-full ic-holder-1"></i>
-                          <h4 className="bold">Design</h4>
-                          <div className="hb-small-break"></div>
+                        <div class="feature-box aligncenter">
+                          <i class="icon-star-half-full ic-holder-1"></i>
+                          <h4 class="bold">Design</h4>
+                          <div class="hb-small-break"></div>
                           <p>
                             Sed bibendum quam sem, sit amet interdum justo
                             fringilla id. Praesent adipiscing ac tortor.
@@ -64,10 +56,10 @@ function Home() {
                       </li>
 
                       <li>
-                        <div className="feature-box aligncenter">
-                          <i className="icon-wrench ic-holder-1"></i>
-                          <h4 className="bold">Development</h4>
-                          <div className="hb-small-break"></div>
+                        <div class="feature-box aligncenter">
+                          <i class="icon-wrench ic-holder-1"></i>
+                          <h4 class="bold">Development</h4>
+                          <div class="hb-small-break"></div>
                           <p>
                             Sed bibendum quam sem, sit amet interdum justo
                             fringilla id. Praesent adipiscing ac tortor.
@@ -76,10 +68,10 @@ function Home() {
                       </li>
 
                       <li>
-                        <div className="feature-box aligncenter">
-                          <i className="icon-rocket ic-holder-1"></i>
-                          <h4 className="bold">Deployment</h4>
-                          <div className="hb-small-break"></div>
+                        <div class="feature-box aligncenter">
+                          <i class="icon-rocket ic-holder-1"></i>
+                          <h4 class="bold">Deployment</h4>
+                          <div class="hb-small-break"></div>
                           <p>
                             Sed bibendum quam sem, sit amet interdum justo
                             fringilla id. Praesent adipiscing ac tortor.
@@ -139,4 +131,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home2;
